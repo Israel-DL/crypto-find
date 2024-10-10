@@ -1,0 +1,24 @@
+.footer{
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    border-top: 1px solid #989898;
+    padding: 15px 0px;
+    font-size: 13px;
+}
+
+.footer a {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: color 0.3s ease; 
+}
+
+.footer a:hover {
+    color: blue;
+}
