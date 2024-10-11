@@ -98,6 +98,67 @@
     text-align: center;
 }
 
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-size: max(4vw, 36px);
+    animation: fadeSlideUp 1s ease-in-out forwards;
+}
+
+.hero p {
+    width: 75%;
+    color: #e3e3e3;
+    line-height: 1.5;
+    animation: fadeSlideUp 1.2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.hero form {
+    padding: 8px;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    opacity: 0; /* initially hidden */
+    animation: fadeSlideUp 1.4s ease-in-out forwards; /* animation for the search bar */
+    animation-delay: 1s; /* delayed after the paragraph animation */
+}
+
+.hero input {
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.hero button {
+    border: none;
+    background: black;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
 @media (max-width: 768px) {
     .table-layout{
         grid-template-columns: 0.5fr 3fr 1fr 1fr;
